@@ -1,0 +1,11 @@
+# Fichiers sources (PDF lourds, noms des co-auteurs) : ne jamais publier
+source/
+
+# Notes et fichiers de travail
+Remarques*.txt
+/logo BMH.jpg
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini

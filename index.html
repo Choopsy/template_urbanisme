@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Carnet de terrain · Portfolio d'urbanisme</title>
-  <meta name="description" content="Portfolio d'urbanisme au style carnet de terrain : projets entre Rabat et Brest. Version de démonstration anonymisée.">
-  <!-- Version de démonstration : on demande aux moteurs de recherche de ne pas indexer la page. -->
+  <title>Meryem Aoujil · Urbaniste</title>
+  <meta name="description" content="Portfolio de Meryem Aoujil, étudiante en Master 2 Urbanisme et Développement à l'Institut de Géoarchitecture de Brest : projets d'urbanisme, cartographie SIG et planches, entre Rabat et Brest.">
+  <meta name="author" content="Meryem Aoujil">
+  <!-- Tant que le portfolio n'est pas officiellement lancé, on demande aux moteurs de recherche de ne pas l'indexer.
+       Pour le rendre visible sur Google : supprimer cette ligne et le fichier robots.txt. -->
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="theme-color" content="#F6F9FC">
 
-  <!-- Aperçu lors du partage du lien (LinkedIn, messageries…) -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Carnet de terrain · Portfolio d'urbanisme">
-  <meta property="og:description" content="Projets d'urbanisme entre Rabat et Brest. Version de démonstration.">
+  <meta property="og:title" content="Meryem Aoujil · Urbaniste">
+  <meta property="og:description" content="Projets d'urbanisme, cartographie SIG et planches, entre Rabat et Brest. Recherche un stage de fin d'études en urbanisme opérationnel.">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Schibsted+Grotesk:wght@400..800&display=swap">
@@ -27,13 +27,15 @@
 
   <div class="wrap">
     <header class="site-header">
-      <a class="brand" href="#top">Carnet de terrain</a>
+      <a class="brand" href="#top">Carnet de Meryem</a>
       <nav class="nav" aria-label="Navigation principale">
-        <a href="#projets">Fiches de terrain</a>
+        <a href="#profil">Profil</a>
+        <a href="#projets">Projets</a>
+        <a href="#cartographie">Cartographie</a>
+        <a href="#planches">Planches</a>
         <a href="#parcours">Parcours</a>
-        <a href="#outils">Outils</a>
         <a href="#contact">Contact</a>
-        <a class="nav__cv" href="#contact">CV sur demande</a>
+        <a class="nav__cv" href="assets/docs/CV-Meryem-Aoujil.pdf" target="_blank" rel="noopener">CV en PDF</a>
       </nav>
     </header>
   </div>
@@ -41,19 +43,20 @@
   <main id="contenu">
     <div class="wrap">
 
-      <!-- ============ ACCUEIL ============ -->
+      <!-- ================= ACCUEIL ================= -->
       <section class="hero" id="top" aria-labelledby="titre">
         <div class="hero__text">
-          <p class="hand hero__kicker">Notes de terrain, de Rabat à Brest, 2023 → 2027</p>
-          <h1 class="hero__title" id="titre">Prénom <span class="hl">Nom</span></h1>
-          <p class="hero__lead">Urbaniste en formation, en Master 2 Urbanisme et Développement à l'Institut de Géoarchitecture de Brest. J'arpente les quartiers, j'écoute les habitants et je traduis ce que j'observe en diagnostic et en plan d'actions.</p>
+          <p class="hand hero__kicker">Notes de terrain, de Rabat à Brest</p>
+          <h1 class="hero__title" id="titre">Meryem <span class="hl">Aoujil</span></h1>
+          <p class="hero__lead">Étudiante en Master 2 Urbanisme et Développement à l'Institut de Géoarchitecture de Brest, formée à l'INAU de Rabat. Je travaille du diagnostic de terrain jusqu'au projet : enquêtes, cartographie SIG, planification et urbanisme opérationnel.</p>
           <div class="hero__status">
-            <p class="badge">Je cherche un stage de fin d'études en urbanisme opérationnel</p>
-            <!-- À COMPLÉTER : période et durée du stage -->
-            <p class="hand hero__dates">← disponible : [dates à préciser]</p>
+            <p class="badge">Je recherche un stage de fin d'études en urbanisme opérationnel</p>
+            <!-- Pour afficher les disponibilités, ajouter par exemple :
+                 <p class="hand hero__dates">← disponible d'avril à septembre 2027</p> -->
           </div>
           <p class="hero__links">
-            <a class="link-under" href="#projets">Ouvrir les fiches de terrain ↓</a>
+            <a class="link-under" href="#projets">Voir les projets ↓</a>
+            <a class="link-under" href="assets/docs/CV-Meryem-Aoujil.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
             <a class="link-under link-under--accent" href="#contact">Me contacter</a>
           </p>
         </div>
@@ -61,16 +64,14 @@
         <div class="hero__visual">
           <figure class="polaroid polaroid--hero">
             <span class="tape tape--center" aria-hidden="true"></span>
-            <!-- Photo retirée pour la démonstration. Version officielle : <img src="assets/img/portrait.jpg" alt="Portrait de …"> -->
-            <img src="assets/img/portrait-a-venir.svg" alt="" width="400" height="500">
-            <figcaption class="hand">photo à venir</figcaption>
+            <img src="assets/img/portrait.jpg" alt="Portrait de Meryem Aoujil" width="522" height="652">
+            <figcaption class="hand">Brest · Master 2</figcaption>
           </figure>
           <p class="postit hand">Formée à l'INAU de Rabat, puis à l'UBO de Brest ✓</p>
         </div>
       </section>
 
-      <!-- ============ TRAJET ============ -->
-      <section class="trajet card" aria-label="Mon trajet de Rabat à Brest">
+      <section class="trajet card" aria-label="En bref">
         <div class="trajet__point">
           <span class="dot dot--accent" aria-hidden="true"></span>
           <p><strong>Rabat</strong><span>INAU · 2021 – 2025</span></p>
@@ -78,7 +79,7 @@
         <div class="trajet__line">
           <span class="hand">≈ 1 610 km à vol d'oiseau</span>
           <span class="trajet__dash" aria-hidden="true"></span>
-          <span class="trajet__sub">7 projets en chemin, du quartier à la région</span>
+          <span class="trajet__sub">du quartier à la région</span>
         </div>
         <div class="trajet__point">
           <span class="dot" aria-hidden="true"></span>
@@ -86,15 +87,55 @@
         </div>
       </section>
 
-      <!-- ============ PROJETS ============ -->
-      <section class="section" id="projets" aria-labelledby="titre-projets">
+      <!-- ================= PROFIL ================= -->
+      <section class="section" id="profil" aria-labelledby="titre-profil">
         <div class="section__head">
-          <h2 class="section__title" id="titre-projets">Fiches de terrain</h2>
-          <p class="hand section__note">7 projets, du plus récent au plus ancien</p>
+          <h2 class="section__title" id="titre-profil">Profil</h2>
+          <p class="hand section__note">trois façons d'aborder un territoire</p>
+        </div>
+        <p class="section__intro">Mon parcours entre le Maroc et la Bretagne m'a appris à lire des territoires très différents, de la médina historique à la frange périurbaine. Je m'intéresse particulièrement aux mobilités, aux ressources des périphéries et à la façon dont les habitants vivent les projets.</p>
+        <div class="profile">
+          <a class="profile__item card" href="#projets" style="--tilt:-0.6deg">
+            <p class="profile__num hand">A</p>
+            <h3>Diagnostic et terrain</h3>
+            <p>Enquêtes auprès des habitants, relevés d'obstacles, analyse du jeu d'acteurs entre bailleurs, opérateurs et collectivités.</p>
+            <span class="profile__link">Voir les études de cas →</span>
+          </a>
+          <a class="profile__item card" href="#cartographie" style="--tilt:0.5deg">
+            <p class="profile__num hand">B</p>
+            <h3>Cartographie et SIG</h3>
+            <p>Analyses spatiales sous QGIS et ArcGIS, de l'échelle d'un boulevard à celle d'une région entière.</p>
+            <span class="profile__link">Voir les cartes →</span>
+          </a>
+          <a class="profile__item card" href="#planches" style="--tilt:-0.4deg">
+            <p class="profile__num hand">C</p>
+            <h3>Planification et projet</h3>
+            <p>Schémas d'orientation, plans masse, scénarios opérationnels et phasage, mis en forme sur planches A0 à A2.</p>
+            <span class="profile__link">Voir les planches →</span>
+          </a>
         </div>
 
-        <!-- Fiche 01 -->
-        <article class="fiche card" id="p01" style="--tilt:-0.5deg; --tape-left:48px">
+        <div class="partners" aria-labelledby="titre-partenaires">
+          <h3 class="label" id="titre-partenaires">Partenaires et commanditaires de mes ateliers</h3>
+          <ul class="partners__list">
+            <li class="partners__logo"><a href="#p01"><img src="assets/img/logos/logo-bmh.png" alt="Brest Métropole Habitat" width="494" height="307" loading="lazy"></a></li>
+            <!-- Pour ajouter un logo : remplacer le texte par <img src="assets/img/logos/nom.png" alt="Nom du partenaire"> -->
+            <li><a href="#p03"><strong>Quimper Bretagne Occidentale</strong><span>Logistique urbaine</span></a></li>
+            <li><a href="#p03"><strong>Cerema · InTerLUD+</strong><span>Programme national</span></a></li>
+            <li><a href="#parcours"><strong>Wilaya Tanger-Tétouan-Al Hoceïma</strong><span>Stage, 2024</span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= PROJETS ================= -->
+      <section class="section" id="projets" aria-labelledby="titre-projets">
+        <div class="section__head">
+          <h2 class="section__title" id="titre-projets">Études de cas</h2>
+          <p class="hand section__note">du projet en cours aux travaux de Master 1</p>
+        </div>
+
+        <!-- Projet 01 : ANRU, Brest (projet actuel) -->
+        <article class="fiche card" id="p01" style="--tape-left:48px; --tape-tilt:-3deg">
           <span class="tape" aria-hidden="true"></span>
           <header class="fiche__meta">
             <p class="fiche__num hand" aria-label="Projet 01">01</p>
@@ -106,62 +147,36 @@
             </dl>
           </header>
           <div class="fiche__body">
-            <figure class="polaroid fiche__figure" style="--tilt:-1.5deg">
-              <!-- À REMPLACER par : <img src="assets/img/projets/01-anru.jpg" alt="Description de l'image"> -->
-              <div class="placeholder hand">photo de terrain ou carte des usages à coller ici</div>
-              <figcaption class="hand">fig. 1 · [légende à préciser]</figcaption>
+            <figure class="partner">
+              <figcaption class="label">Partenaire</figcaption>
+              <img src="assets/img/logos/logo-bmh.png" alt="Brest Métropole Habitat" width="494" height="307">
             </figure>
             <div class="fiche__content">
-              <p class="tags"><span class="tags__theme">Renouvellement urbain</span><span class="tags__hl">En cours</span></p>
+              <p class="tags"><span class="tags__hl">En cours</span><span class="tags__theme">Projet actuel · Master 2</span><span class="tags__muted">Renouvellement urbain</span></p>
               <h3 class="fiche__title">ANRU : réception et vécu d'un programme</h3>
-              <p class="fiche__lead">Atelier mené avec Brest Métropole Habitat pour confronter les ambitions d'un programme de renouvellement urbain aux réalités du quartier.</p>
+              <p class="fiche__lead">Avec Brest Métropole Habitat, un diagnostic d'usage et sociologique de la rénovation urbaine, pour confronter les ambitions du programme aux réalités du quartier.</p>
+            </div>
+          </div>
+          <div class="steps steps--two">
+            <div class="step">
+              <h4 class="step__title"><span class="hand">1.</span> Méthode et terrain</h4>
               <ul class="arrows">
-                <li><strong>Diagnostic d'usage et enquête de terrain :</strong> recueil des attentes et des retours des habitants sur la réception du programme et le vécu des transformations.</li>
-                <li><strong>Jeu d'acteurs et gouvernance :</strong> interactions entre bailleur social, opérateurs et tutelles.</li>
+                <li>Enquêtes de terrain et recueil qualitatif des retours des habitants sur les transformations du quartier.</li>
+                <li>Cartographie des acteurs et analyse des interactions entre bailleur social, opérateurs et collectivités.</li>
               </ul>
-              <!-- À COMPLÉTER : rôle personnel dans le projet -->
-              <p class="role"><span class="hl-soft">Mon rôle</span> <span class="hand">[à préciser]</span></p>
+            </div>
+            <div class="step">
+              <h4 class="step__title"><span class="hand">2.</span> Résultats attendus</h4>
+              <p>Évaluation des besoins réels des résidents et recommandations d'ajustement pour les futurs aménagements d'espaces publics.</p>
+              <p class="hand step__note">Rapport et cartographie des usages à venir à l'issue de l'atelier, en avril 2027.</p>
             </div>
           </div>
         </article>
-
-        <!-- Fiche 02 -->
-        <article class="fiche card fiche--reverse" id="p02" style="--tilt:0.4deg; --tape-left:auto; --tape-right:64px; --tape-tilt:4deg">
+        <!-- Projet 02 : Biométropole -->
+        <article class="fiche card" id="p02" style="--tape-left:46%; --tape-tilt:-2deg">
           <span class="tape" aria-hidden="true"></span>
           <header class="fiche__meta">
             <p class="fiche__num hand" aria-label="Projet 02">02</p>
-            <dl>
-              <div><dt class="label">Lieu</dt><dd class="hand">Quimper</dd></div>
-              <div><dt class="label">Dates</dt><dd class="hand">oct. 2025 → mars 2026</dd></div>
-              <div><dt class="label">Cadre</dt><dd class="hand">atelier professionnel</dd></div>
-              <div><dt class="label">Échelle</dt><dd class="hand">agglomération</dd></div>
-            </dl>
-          </header>
-          <div class="fiche__body">
-            <figure class="polaroid fiche__figure" style="--tilt:1.8deg">
-              <!-- À REMPLACER par : <img src="assets/img/projets/02-logistique.jpg" alt="Description de l'image"> -->
-              <div class="placeholder hand">carte des flux de livraison à coller ici</div>
-              <figcaption class="hand">fig. 2 · [légende à préciser]</figcaption>
-            </figure>
-            <div class="fiche__content">
-              <p class="tags"><span class="tags__theme">Mobilité et logistique</span></p>
-              <h3 class="fiche__title">Logistique urbaine durable</h3>
-              <p class="fiche__lead">Diagnostic et plan d'actions sur le transport de marchandises en ville pour Quimper Bretagne Occidentale, dans le cadre du programme national INTERLUD (Cerema).</p>
-              <ul class="arrows">
-                <li><strong>Diagnostic et enjeux :</strong> transport de marchandises en milieu urbain, en particulier le dernier kilomètre.</li>
-                <li><strong>Planification opérationnelle :</strong> planning d'actions concrètes et des ressources nécessaires.</li>
-                <li><strong>Travail avec la collectivité :</strong> échanges avec les services de QBO, sous l'égide de la vice-présidente aux mobilités.</li>
-              </ul>
-              <p class="role"><span class="hl-soft">Mon rôle</span> <span class="hand">[à préciser]</span></p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Fiche 03 -->
-        <article class="fiche card" id="p03" style="--tilt:-0.3deg; --tape-left:46%; --tape-tilt:-2deg">
-          <span class="tape" aria-hidden="true"></span>
-          <header class="fiche__meta">
-            <p class="fiche__num hand" aria-label="Projet 03">03</p>
             <dl>
               <div><dt class="label">Lieu</dt><dd class="hand">Brest et sa frange ouest</dd></div>
               <div><dt class="label">Dates</dt><dd class="hand">2025 → 2026</dd></div>
@@ -169,71 +184,162 @@
               <div><dt class="label">Équipe</dt><dd class="hand">3 étudiants</dd></div>
             </dl>
           </header>
+
           <div class="fiche__body">
-            <figure class="polaroid fiche__figure" style="--tilt:-1deg">
-              <!-- À REMPLACER par : <img src="assets/img/projets/03-biometropole.jpg" alt="Description de l'image"> -->
-              <div class="placeholder hand">plan du projet pour Guilers, Bohars et Saint-Renan à coller ici</div>
-              <figcaption class="hand">fig. 3 · [légende à préciser]</figcaption>
+            <figure class="polaroid fiche__figure">
+              <a class="zoom" href="assets/img/projets/biometropole-couverture.jpg" data-gallery="bio" data-caption="Page de garde du mémoire « Biométropole »"><img src="assets/img/projets/biometropole-couverture-m.jpg" alt="Page de garde du mémoire Biométropole" width="756" height="900" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a>
+              <figcaption class="hand">page de garde du mémoire</figcaption>
             </figure>
             <div class="fiche__content">
-              <p class="tags"><span class="tags__theme">Planification · travail collectif</span></p>
+              <p class="tags"><span class="tags__theme">Planification · projet urbain</span></p>
               <h3 class="fiche__title">« Biométropole » : étude pour Brest 2050</h3>
-              <p class="fiche__question hand">Comment les ressources des périphéries peuvent-elles structurer la planification des biométropoles ?</p>
-              <ul class="arrows">
-                <li><strong>Analyse comparative :</strong> Copenhague, Nuremberg et Clermont-Ferrand.</li>
-                <li><strong>Outil opérationnel :</strong> proposition d'un Bureau du remembrement urbain.</li>
-                <li><strong>Projet de territoire :</strong> intervention sur la frange ouest de Brest, à Guilers, Bohars et Saint-Renan.</li>
-              </ul>
-              <p class="fiche__note">Soutenances semestrielles devant jury.</p>
-              <p class="role"><span class="hl-soft">Ma part du travail</span> <span class="hand">[à préciser]</span></p>
+              <p class="fiche__question hand">Comment les ressources et les dynamiques des périphéries peuvent-elles structurer la planification durable des biométropoles à l'horizon 2050 ?</p>
+              <p class="fiche__lead">Mémoire collectif mené à l'Institut de Géoarchitecture, sous la direction de trois enseignants-chercheurs, avec des soutenances semestrielles devant jury.</p>
             </div>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <h4 class="step__title"><span class="hand">1.</span> Diagnostic</h4>
+              <p>Analyse des vulnérabilités climatiques selon la trajectoire de réchauffement de référence (TRACC) à 2050 et 2100, et du risque de submersion marine mesuré au marégraphe de Brest.</p>
+              <ul class="stats">
+                <li><strong>11 %</strong><span>d'autonomie alimentaire</span></li>
+                <li><strong>88 %</strong><span>des trajets entre intercommunalités faits en voiture</span></li>
+              </ul>
+            </div>
+            <div class="step">
+              <h4 class="step__title"><span class="hand">2.</span> Démarche</h4>
+              <p>Analyse comparative de trois cas européens, Copenhague, Nuremberg et Clermont-Ferrand, puis lecture des ressources agricoles et des mobilités de la frange ouest : Guilers, Bohars, Saint-Renan.</p>
+            </div>
+            <div class="step">
+              <h4 class="step__title"><span class="hand">3.</span> Propositions</h4>
+              <ul class="arrows">
+                <li><strong>Outil institutionnel :</strong> création d'un Bureau du remembrement urbain.</li>
+                <li><strong>Projet opérationnel :</strong> le Hub d'innovation agraire du Vern, avec ferme pédagogique, maraîchage, halle technique R+2 et pôle d'échanges multimodal relié au tram A.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="compares">
+            <figure class="compare">
+              <div class="compare__frame" style="--pos:50%; aspect-ratio:800 / 449">
+                <img src="assets/img/projets/biometropole-apres.jpg" alt="Entrée du site du Vern : après aménagement" width="800" height="449" loading="lazy" decoding="async">
+                <img class="compare__before" src="assets/img/projets/biometropole-avant.jpg" alt="Entrée du site du Vern : état actuel" width="800" height="449" loading="lazy" decoding="async">
+                <span class="compare__tag compare__tag--before">Avant</span>
+                <span class="compare__tag compare__tag--after">Après</span>
+                <span class="compare__handle" aria-hidden="true"></span>
+                <input class="compare__range" id="compare-vern-1" type="range" min="0" max="100" value="50" aria-label="Comparer l’état actuel et le projet : Entrée du site du Vern">
+              </div>
+              <figcaption class="hand">Entrée du site du Vern<span class="screen-only"> · faites glisser pour comparer</span></figcaption>
+            </figure>
+            <figure class="compare">
+              <div class="compare__frame" style="--pos:50%; aspect-ratio:800 / 449">
+                <img src="assets/img/projets/biometropole-apres-2.jpg" alt="Corridor de mobilité douce : après aménagement" width="800" height="449" loading="lazy" decoding="async">
+                <img class="compare__before" src="assets/img/projets/biometropole-avant-2.jpg" alt="Corridor de mobilité douce : état actuel" width="800" height="449" loading="lazy" decoding="async">
+                <span class="compare__tag compare__tag--before">Avant</span>
+                <span class="compare__tag compare__tag--after">Après</span>
+                <span class="compare__handle" aria-hidden="true"></span>
+                <input class="compare__range" id="compare-vern-2" type="range" min="0" max="100" value="50" aria-label="Comparer l’état actuel et le projet : Corridor de mobilité douce">
+              </div>
+              <figcaption class="hand">Corridor de mobilité douce<span class="screen-only"> · faites glisser pour comparer</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery" aria-label="Visuels du projet Biométropole">
+            <figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-composition.jpg" data-gallery="bio" data-caption="Plan de composition et zonage du Hub du Vern"><img src="assets/img/projets/biometropole-composition-m.jpg" alt="Vue aérienne du site du Vern avec le zonage du projet" width="890" height="687" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Plan de composition et zonage du Hub du Vern</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-plan-masse.jpg" data-gallery="bio" data-caption="Plan de masse du Hub du Vern"><img src="assets/img/projets/biometropole-plan-masse-m.jpg" alt="Plan de masse paysager du Hub du Vern" width="516" height="547" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Plan de masse du Hub du Vern</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-vue-3d.jpg" data-gallery="bio" data-caption="Axonométrie : visuel global du hub"><img src="assets/img/projets/biometropole-vue-3d-m.jpg" alt="Vue en trois dimensions du hub agraire" width="800" height="403" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Axonométrie : visuel global du hub</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-schema-spatial.jpg" data-gallery="bio" data-caption="Axonométrie spatiale du Hub du Vern"><img src="assets/img/projets/biometropole-schema-spatial-m.jpg" alt="Axonométrie des zones du projet : logements, multimodalité, accueil, technique, espace maraîcher" width="900" height="473" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Axonométrie spatiale du Hub du Vern</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-pole-multimodal.jpg" data-gallery="bio" data-caption="Le pôle multimodal du Vern dans la frange ouest"><img src="assets/img/projets/biometropole-pole-multimodal-m.jpg" alt="Carte des intermodalités vertes de la frange ouest de Brest" width="900" height="687" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Le pôle multimodal du Vern dans la frange ouest</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-sequence.jpg" data-gallery="bio" data-caption="Séquence du corridor de mobilité douce"><img src="assets/img/projets/biometropole-sequence-m.jpg" alt="Schéma de la séquence spatiale du corridor de mobilité douce" width="900" height="439" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Séquence du corridor de mobilité douce</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/biometropole-pem.jpg" data-gallery="bio" data-caption="Plan et perspective du pôle d’échanges multimodal (PEM)"><img src="assets/img/projets/biometropole-pem-m.jpg" alt="Plan et perspective du pôle d’échanges multimodal du Vern" width="844" height="666" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Plan et perspective du pôle d’échanges multimodal (PEM)</figcaption></figure>
+          </div>
+          <!-- Pour préciser le rôle de Meryem, ajouter avant la fermeture de l'article :
+               <p class="role"><span class="hl-soft">Mon rôle</span> <span class="hand">…</span></p> -->
+        </article>
+
+        <!-- Projet 03 : Logistique urbaine, Quimper -->
+        <article class="fiche card" id="p03" style="--tape-left:auto; --tape-right:64px; --tape-tilt:4deg">
+          <span class="tape" aria-hidden="true"></span>
+          <header class="fiche__meta">
+            <p class="fiche__num hand" aria-label="Projet 03">03</p>
+            <dl>
+              <div><dt class="label">Lieu</dt><dd class="hand">Quimper</dd></div>
+              <div><dt class="label">Dates</dt><dd class="hand">oct. 2025 → mars 2026</dd></div>
+              <div><dt class="label">Cadre</dt><dd class="hand">atelier professionnel</dd></div>
+              <div><dt class="label">Équipe</dt><dd class="hand">6 étudiants</dd></div>
+            </dl>
+          </header>
+
+          <div class="fiche__body fiche--reverse-body">
+            <figure class="polaroid fiche__figure">
+              <a class="zoom" href="assets/img/projets/quimper-couverture.jpg" data-gallery="quimper" data-caption="Page de garde du rapport final de l’atelier Quimper"><img src="assets/img/projets/quimper-couverture-m.jpg" alt="Page de garde du rapport : camion de livraison dans une rue pavée de Quimper" width="636" height="900" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a>
+              <figcaption class="hand">page de garde du rapport final</figcaption>
+            </figure>
+            <div class="fiche__content">
+              <p class="tags"><span class="tags__theme">Mobilité et logistique urbaine</span></p>
+              <h3 class="fiche__title">Logistique urbaine durable à Quimper</h3>
+              <p class="fiche__lead">Pour Quimper Bretagne Occidentale, dans le cadre du programme national InTerLUD+ porté par le Cerema : définir des scénarios d'approvisionnement décarboné pour le centre-ville piéton.</p>
+              <ul class="arrows">
+                <li><strong>Diagnostic :</strong> transport de marchandises en ville, en particulier le dernier kilomètre.</li>
+                <li><strong>Planification opérationnelle :</strong> planning d'actions et ressources nécessaires.</li>
+                <li><strong>Travail avec la collectivité :</strong> échanges avec les services de QBO, sous l'égide de la vice-présidente aux mobilités.</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="block-title">Trois scénarios opérationnels</h4>
+          <div class="scenarios">
+            <article class="scenario"><figure class="polaroid scenario__photo"><a class="zoom" href="assets/img/projets/quimper-cyclologistique.jpg" data-gallery="quimper" data-caption="Scénario 1 · Cyclologistique totale"><img src="assets/img/projets/quimper-cyclologistique-m.jpg" alt="Scénario 1 : Cyclologistique totale" width="600" height="800" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption class="hand">Scénario 1</figcaption></figure><h4>Cyclologistique totale</h4><p>Boucles logistiques entre les hubs périphériques de Rouillen et de Guélen et des micro-hubs du centre piéton, desservis en vélos-cargos triporteurs et biporteurs.</p></article><article class="scenario"><figure class="polaroid scenario__photo"><a class="zoom" href="assets/img/projets/quimper-nuit.jpg" data-gallery="quimper" data-caption="Scénario 2 · Logistique de nuit"><img src="assets/img/projets/quimper-nuit-m.jpg" alt="Scénario 2 : Logistique de nuit" width="597" height="800" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption class="hand">Scénario 2</figcaption></figure><h4>Logistique de nuit</h4><p>Approvisionnement hors heures de pointe, de 22 h à 7 h, avec du matériel silencieux certifié Peak, la labellisation Certibruit et une mutualisation dans la zone d’activités du Petit Guélen.</p></article><article class="scenario"><figure class="polaroid scenario__photo"><a class="zoom" href="assets/img/projets/quimper-hybride.jpg" data-gallery="quimper" data-caption="Scénario 3 · Hybride et modèle LOD"><img src="assets/img/projets/quimper-hybride-m.jpg" alt="Scénario 3 : Hybride et modèle LOD" width="600" height="800" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption class="hand">Scénario 3</figcaption></figure><h4>Hybride et modèle LOD</h4><p>Réaménagement des Halles en plateforme de distribution urbaine, casiers pour commerçants et habitants, corridor de fret entre la gare et le centre.</p></article>
+          </div>
+
+          <div class="gallery" aria-label="Visuels du projet de logistique urbaine">
+            <figure class="shot"><a class="zoom" href="assets/img/projets/quimper-parcours-velo.jpg" data-gallery="quimper" data-caption="Les 3 parcours cyclologistiques (19, 23 et 27 minutes)"><img src="assets/img/projets/quimper-parcours-velo-m.jpg" alt="Graphe des parcours vélo entre le centre de Quimper et les plateformes logistiques" width="531" height="295" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Les 3 parcours cyclologistiques (19, 23 et 27 minutes)</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/quimper-organisation-nuit.jpg" data-gallery="quimper" data-caption="Organisation de la logistique nocturne"><img src="assets/img/projets/quimper-organisation-nuit-m.jpg" alt="Carte de l’organisation de la logistique de nuit à Quimper" width="526" height="755" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Organisation de la logistique nocturne</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/quimper-cdu.jpg" data-gallery="quimper" data-caption="Implantations comparées du centre de distribution urbaine"><img src="assets/img/projets/quimper-cdu-m.jpg" alt="Carte comparant deux implantations possibles du centre de distribution urbaine" width="512" height="762" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Implantations comparées du centre de distribution urbaine</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/quimper-flux-hybrides.jpg" data-gallery="quimper" data-caption="Flux logistiques hybrides : périmètre B et zone piétonne"><img src="assets/img/projets/quimper-flux-hybrides-m.jpg" alt="Plan de Quimper et des flux logistiques hybrides" width="381" height="719" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Flux logistiques hybrides : périmètre B et zone piétonne</figcaption></figure><figure class="shot"><a class="zoom" href="assets/img/projets/quimper-halles-lod.jpg" data-gallery="quimper" data-caption="Plan d’aménagement fonctionnel LOD des Halles"><img src="assets/img/projets/quimper-halles-lod-m.jpg" alt="Plan d’aménagement fonctionnel des Halles en plateforme logistique" width="861" height="605" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><figcaption>Plan d’aménagement fonctionnel LOD des Halles</figcaption></figure>
           </div>
         </article>
 
-        <!-- Projets INAU -->
+      </section>
+
+      <!-- ================= CARTOGRAPHIE ================= -->
+      <section class="section" id="cartographie" aria-labelledby="titre-cartes">
+        <div class="section__head">
+          <h2 class="section__title" id="titre-cartes">Cartographie SIG</h2>
+          <p class="hand section__note">9 cartes<span class="screen-only">, cliquez pour agrandir</span></p>
+        </div>
+        <p class="section__intro">Cartes produites sous QGIS et ArcMap, à partir de données ouvertes, de recensements et de relevés de terrain : en Lambert-93 pour la Bretagne, à l'échelle régionale pour le Maroc.</p>
+
         <div class="subsection">
           <div class="section__head section__head--small">
-            <h3 class="subsection__title">À l'INAU de Rabat</h3>
-            <p class="hand section__note">ateliers et stages, 2023 → 2025</p>
+            <h3 class="subsection__title">Brest, quartier de Lambézellec</h3>
+            <p class="hand section__note">conflits d'usage vélo / automobile</p>
           </div>
-          <div class="index-cards">
-            <article class="index-card" id="p04" style="--tilt:-1deg">
-              <p class="index-card__num hand" aria-label="Projet 04">04</p>
-              <p class="label">Patrimoine · atelier</p>
-              <h4>Réhabilitation de la médina de Safi</h4>
-              <p>Diagnostic patrimonial et proposition de réhabilitation de la médina.</p>
-              <p class="hand index-card__date">déc. 2024 → fév. 2025</p>
-            </article>
-            <article class="index-card" id="p05" style="--tilt:0.8deg">
-              <p class="index-card__num hand" aria-label="Projet 05">05</p>
-              <p class="label">Aménagement régional · stage</p>
-              <h4>Wilaya de la région Tanger-Tétouan-Al Hoceïma</h4>
-              <p>Analyse et suivi de projets d'aménagement régional, appui administratif et coordination avec les acteurs institutionnels.</p>
-              <p class="hand index-card__date">août → sept. 2024</p>
-            </article>
-            <article class="index-card" id="p06" style="--tilt:-0.6deg">
-              <p class="index-card__num hand" aria-label="Projet 06">06</p>
-              <p class="label">Projet urbain · atelier</p>
-              <h4>Grands projets d'aménagement : le Hay Ryad, Rabat</h4>
-              <p>Étude de grands projets d'aménagement et d'urbanisme à partir du quartier Hay Ryad.</p>
-              <p class="hand index-card__date">fév. → juin 2024</p>
-            </article>
-            <article class="index-card" id="p07" style="--tilt:1.1deg">
-              <p class="index-card__num hand" aria-label="Projet 07">07</p>
-              <p class="label">Usages et société · stage</p>
-              <h4>Usages de l'espace urbain, quartier Taqaddoum, Rabat</h4>
-              <p>Cohabitation entre migrants subsahariens et population marocaine dans l'espace public.</p>
-              <p class="hand index-card__date">mai → juin 2023</p>
-            </article>
+          <div class="maps maps--wide">
+            <article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/01-lambezellec.jpg" data-gallery="cartes" data-caption="Carte 01 · Diagnostic spatial des conflits cyclistes à Lambézellec"><img src="assets/img/cartes/01-lambezellec-m.jpg" alt="Diagnostic spatial des conflits cyclistes à Lambézellec" width="900" height="636" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">01</p><h4>Diagnostic spatial des conflits cyclistes à Lambézellec</h4><p>QGIS 3.40, Lambert-93 · couches GéoPays de Brest, obstacles relevés sur le terrain le 17/02/2026, Baromètre Vélo 2025 (FUB)</p></div></article>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="section__head section__head--small">
+            <h3 class="subsection__title">Région Tanger-Tétouan-Al Hoceïma, Maroc</h3>
+            <p class="hand section__note">atlas régional</p>
+          </div>
+          <div class="maps">
+            <article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/02-armature-urbaine-tta.jpg" data-gallery="cartes" data-caption="Carte 02 · Armature urbaine et infrastructures"><img src="assets/img/cartes/02-armature-urbaine-tta-m.jpg" alt="Armature urbaine et infrastructures" width="900" height="496" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">02</p><h4>Armature urbaine et infrastructures</h4><p>QGIS · cercles proportionnels (métropole de Tanger, villes relais, villes secondaires), réseau routier hiérarchisé, barrages, ports et aéroports</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/03-relief-tta.jpg" data-gallery="cartes" data-caption="Carte 03 · Relief et modèle numérique de terrain"><img src="assets/img/cartes/03-relief-tta-m.jpg" alt="Relief et modèle numérique de terrain" width="900" height="899" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">03</p><h4>Relief et modèle numérique de terrain</h4><p>SRTM 1 Arc-Second (USGS), ArcMap et QGIS · hypsométrie et courbes de niveau tous les 500 m, de −38 m à 2 443 m</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/04-transports-tta.jpg" data-gallery="cartes" data-caption="Carte 04 · Équipements de transport et ports"><img src="assets/img/cartes/04-transports-tta-m.jpg" alt="Équipements de transport et ports" width="900" height="879" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">04</p><h4>Équipements de transport et ports</h4><p>Gares ONCF, aéroports Ibn Battouta, Sania Ramel et Al Hoceïma, port de Tanger Med et ports de plaisance</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/05-population-tta.jpg" data-gallery="cartes" data-caption="Carte 05 · Population municipale par province"><img src="assets/img/cartes/05-population-tta-m.jpg" alt="Population municipale par province" width="900" height="879" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">05</p><h4>Population municipale par province</h4><p>Cercles proportionnels gradués, de 99 401 à 1 487 236 habitants · recensement RGPH</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/06-structure-age-tta.jpg" data-gallery="cartes" data-caption="Carte 06 · Âge et état matrimonial par province"><img src="assets/img/cartes/06-structure-age-tta-m.jpg" alt="Âge et état matrimonial par province" width="900" height="870" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">06</p><h4>Âge et état matrimonial par province</h4><p>Diagrammes en secteurs croisant tranches d’âge (moins de 15 ans, 15–59 ans, 60 ans et plus) et statut matrimonial</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/07-structure-communes-tta.jpg" data-gallery="cartes" data-caption="Carte 07 · Structure démographique par commune"><img src="assets/img/cartes/07-structure-communes-tta-m.jpg" alt="Structure démographique par commune" width="900" height="870" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">07</p><h4>Structure démographique par commune</h4><p>Analyse multivariée par diagrammes sectoriels communaux sous QGIS</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/08-menages-tta.jpg" data-gallery="cartes" data-caption="Carte 08 · Taille moyenne des ménages par commune"><img src="assets/img/cartes/08-menages-tta-m.jpg" alt="Taille moyenne des ménages par commune" width="900" height="875" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">08</p><h4>Taille moyenne des ménages par commune</h4><p>Carte choroplèthe en 3 classes, de 3,4 à 5,5 personnes par ménage : gradient entre littoral et Rif</p></div></article><article class="map-card"><a class="zoom map-card__img" href="assets/img/cartes/09-logements-tta.jpg" data-gallery="cartes" data-caption="Carte 09 · Typologie des logements par commune"><img src="assets/img/cartes/09-logements-tta-m.jpg" alt="Typologie des logements par commune" width="900" height="876" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><div class="map-card__body"><p class="map-card__num hand">09</p><h4>Typologie des logements par commune</h4><p>Diagrammes sectoriels : logements ruraux, appartements, maisons marocaines, villas, habitat sommaire</p></div></article>
           </div>
         </div>
       </section>
 
-      <!-- ============ PARCOURS ============ -->
+      <!-- ================= PLANCHES ================= -->
+      <section class="section" id="planches" aria-labelledby="titre-planches">
+        <div class="section__head">
+          <h2 class="section__title" id="titre-planches">Planches d'urbanisme</h2>
+          <p class="hand section__note">de la plus récente à la plus ancienne</p>
+        </div>
+        <p class="section__intro">Planches réalisées en atelier à l'INAU de Rabat et à l'Institut de Géoarchitecture de Brest. <span class="screen-only">Ouvrez une planche pour la lire en grand format.</span></p>
+        <div class="planches">
+          <article class="planche-card card"><div class="planche-card__frame"><a class="zoom planche-card__img" href="assets/img/planches/daoulas.jpg" data-gallery="planche-0" data-caption="« Tous les chemins mènent à Daoulas »"><img src="assets/img/planches/daoulas-m.jpg" alt="« Tous les chemins mènent à Daoulas »" width="708" height="1000" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a></div><div class="planche-card__body"><p class="tags"><span class="tags__year">2026</span><span class="tags__theme">Planche grand format</span></p><h3>« Tous les chemins mènent à Daoulas »</h3><p class="planche-card__place">Daoulas, Finistère · Institut de Géoarchitecture, UBO</p><p>Évolution de l’urbanisation de 1950 à 2020, captation des flux pendulaires de la RN165 (10 000 véhicules par jour) et centralité de services qui polarise 4 000 usagers.</p><p class="planche-card__tools"><span class="label">Outils</span> QGIS, Illustrator, Photoshop</p></div></article><article class="planche-card card"><div class="planche-card__frame"><a class="zoom planche-card__img" href="assets/img/planches/mqam-tolba.jpg" data-gallery="planche-1" data-caption="Schéma d’orientation de Mqam Tolba"><img src="assets/img/planches/mqam-tolba-m.jpg" alt="Schéma d’orientation de Mqam Tolba" width="1000" height="708" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a></div><div class="planche-card__body"><p class="tags"><span class="tags__year">2025</span><span class="tags__theme">A0 paysage</span></p><h3>Schéma d’orientation de Mqam Tolba</h3><p class="planche-card__place">Commune rurale, province de Khémisset · INAU Rabat</p><p>Diagnostic d’une commune rurale, désenclavement des douars, projet de souk intercommunal avec Tiflet et Sidi Abderrazak, et trois axes stratégiques alignés sur les objectifs de développement durable 2030.</p><p class="planche-card__tools"><span class="label">Outils</span> QGIS, Illustrator, InDesign</p></div></article><article class="planche-card card"><div class="planche-card__frame"><a class="zoom planche-card__img" href="assets/img/planches/medina-safi.jpg" data-gallery="planche-2" data-caption="Morphogenèse et réhabilitation de la médina de Safi"><img src="assets/img/planches/medina-safi-m.jpg" alt="Morphogenèse et réhabilitation de la médina de Safi" width="1000" height="708" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a></div><div class="planche-card__body"><p class="tags"><span class="tags__year">2024</span><span class="tags__theme">A0</span></p><h3>Morphogenèse et réhabilitation de la médina de Safi</h3><p class="planche-card__place">Safi · INAU Rabat</p><p>Analyse morphologique des tissus almohades et mérinides, érosion de la falaise du Ksar El Bahr (projet de digue de 260 m), rupture entre voie ferrée et place de l’Indépendance, circuit touristique sur la muraille.</p><p class="planche-card__tools"><span class="label">Outils</span> AutoCAD, Photoshop, Illustrator, SIG</p></div></article><article class="planche-card card"><div class="planche-card__frame"><a class="zoom planche-card__img" href="assets/img/planches/hay-riad-1.jpg" data-gallery="planche-3" data-caption="Diagnostic des grands projets urbains : Hay Riad · planche 1/2"><img src="assets/img/planches/hay-riad-1-m.jpg" alt="Diagnostic des grands projets urbains : Hay Riad" width="744" height="1000" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a><a class="visually-hidden" href="assets/img/planches/hay-riad-2.jpg" data-gallery="planche-3" data-caption="Diagnostic des grands projets urbains : Hay Riad · planche 2/2">Diagnostic des grands projets urbains : Hay Riad · planche 2/2</a><span class="planche-card__pages">2 planches</span></div><div class="planche-card__body"><p class="tags"><span class="tags__year">2023</span><span class="tags__theme">2 planches A2</span></p><h3>Diagnostic des grands projets urbains : Hay Riad</h3><p class="planche-card__place">Rabat · INAU Rabat</p><p>Planche 1 : diagnostic territorial, accessibilité par les quatre grands axes, topographie de plateau (50 à 96 m), réseau viaire de 124 km. Planche 2 : morphologie bâtie, rapport plein/vide de 80/20, plus de 80 % d’espaces libres privatifs, gabarits des villas R+1 aux tours R+27, 94 % de résidentiel.</p><p class="planche-card__tools"><span class="label">Outils</span> AutoCAD, Illustrator, Photoshop, SIG</p></div></article><article class="planche-card card"><div class="planche-card__frame"><a class="zoom planche-card__img" href="assets/img/planches/dar-bouazza.jpg" data-gallery="planche-4" data-caption="Parti d’aménagement d’un lotissement mixte"><img src="assets/img/planches/dar-bouazza-m.jpg" alt="Parti d’aménagement d’un lotissement mixte" width="708" height="1000" loading="lazy" decoding="async"><span class="zoom__hint" aria-hidden="true">⤢</span></a></div><div class="planche-card__body"><p class="tags"><span class="tags__year">2022</span><span class="tags__theme">Planche d’urbanisme opérationnel</span></p><h3>Parti d’aménagement d’un lotissement mixte</h3><p class="planche-card__place">Dar Bouazza, Casablanca · INAU Rabat</p><p>Plan masse radioconcentrique, mixité typologique (villas de 400 m², collectifs R+2 sur jardins, R+4), trame viaire apaisée, parcs paysagers et équipements publics.</p><p class="planche-card__tools"><span class="label">Outils</span> AutoCAD, Photoshop, Illustrator</p></div></article>
+        </div>
+      </section>
+
+      <!-- ================= PARCOURS ================= -->
       <section class="section" id="parcours" aria-labelledby="titre-parcours">
         <div class="section__head">
           <h2 class="section__title" id="titre-parcours">Parcours</h2>
-          <p class="hand section__note">et la prochaine étape</p>
+          <p class="hand section__note">formation, stages et prochaine étape</p>
         </div>
         <ol class="timeline">
           <li>
@@ -258,12 +364,31 @@
             <span class="timeline__dot" aria-hidden="true"></span>
             <p class="hand timeline__date">prochaine étape</p>
             <h3><span class="hl-soft">Stage de fin d'études</span> en urbanisme opérationnel</h3>
-            <p>[période et durée à préciser]</p>
+            <p>Planification, documents d'urbanisme, maîtrise d'œuvre, diagnostic territorial</p>
           </li>
         </ol>
+
+        <div class="subsection">
+          <div class="section__head section__head--small">
+            <h3 class="subsection__title">Stages</h3>
+            <p class="hand section__note">au Maroc</p>
+          </div>
+          <div class="index-cards">
+            <article class="index-card" style="--tilt:-0.8deg">
+              <p class="label">Aménagement régional · août → sept. 2024</p>
+              <h4>Wilaya de la région Tanger-Tétouan-Al Hoceïma</h4>
+              <p>Analyse et suivi de projets d'aménagement régional, appui administratif et coordination avec les acteurs institutionnels.</p>
+            </article>
+            <article class="index-card" style="--tilt:0.7deg">
+              <p class="label">Usages et société · mai → juin 2023</p>
+              <h4>Usages de l'espace urbain, quartier Taqaddoum, Rabat</h4>
+              <p>Étude de la cohabitation entre migrants subsahariens et population marocaine dans l'espace public.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <!-- ============ OUTILS ============ -->
+      <!-- ================= COMPÉTENCES ================= -->
       <section class="section" id="outils" aria-labelledby="titre-outils">
         <div class="section__head">
           <h2 class="section__title" id="titre-outils">Boîte à outils</h2>
@@ -277,6 +402,7 @@
               <li>Diagnostic territorial</li>
               <li>Urbanisme opérationnel</li>
               <li>Transport, mobilité et logistique urbaine</li>
+              <li>Systèmes d'information géographique</li>
               <li>Assainissement et VRD</li>
               <li>Dessin assisté et modélisation 3D</li>
               <li>Gouvernance participative</li>
@@ -287,7 +413,7 @@
             <dl class="software">
               <div><dt class="hand">SIG</dt><dd>QGIS, ArcGIS, MapInfo, uMap</dd></div>
               <div><dt class="hand">DAO</dt><dd>AutoCAD</dd></div>
-              <div><dt class="hand">Graphisme</dt><dd>Photoshop, Illustrator</dd></div>
+              <div><dt class="hand">Graphisme</dt><dd>Photoshop, Illustrator, InDesign</dd></div>
               <div><dt class="hand">Données</dt><dd>Excel (TCD, RECHERCHEV/H, INDEX-EQUIV, macros), Power BI</dd></div>
             </dl>
           </div>
@@ -308,29 +434,28 @@
         </div>
       </section>
 
-      <!-- ============ CONTACT ============ -->
+      <!-- ================= CONTACT ================= -->
       <section class="section section--last" id="contact" aria-labelledby="titre-contact">
         <div class="postcard card" style="--tilt:-0.6deg; --tape-left:60px">
           <span class="tape" aria-hidden="true"></span>
           <div class="postcard__message">
             <h2 class="section__title" id="titre-contact">Écrivez-moi</h2>
             <p class="hand postcard__text">Un stage, un projet de territoire, une question : je serai ravie d'en parler.</p>
-            <p class="hand postcard__sign">[Prénom]</p>
+            <p class="hand postcard__sign">Meryem</p>
           </div>
           <div class="postcard__address">
             <span class="stamp hand" aria-hidden="true">Brest<br>29</span>
-            <!-- Coordonnées retirées pour la démonstration : à ajouter lors de la publication officielle. -->
             <p class="contact-line">
               <span class="label">Courriel</span>
-              <span class="contact-line__value">prenom.nom@exemple.fr</span>
+              <a href="mailto:aoujil.meryemm@gmail.com">aoujil.meryemm@gmail.com</a>
             </p>
             <p class="contact-line">
               <span class="label">Téléphone</span>
-              <span class="contact-line__value">disponible sur demande</span>
+              <a href="tel:+33660336780">+33 6 60 33 67 80</a>
             </p>
             <p class="contact-buttons">
-              <span class="btn btn--ink btn--off">LinkedIn</span>
-              <span class="btn btn--off">CV sur demande</span>
+              <a class="btn btn--ink" href="https://www.linkedin.com/in/aoujil-meryem" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="assets/docs/CV-Meryem-Aoujil.pdf" target="_blank" rel="noopener">CV en PDF</a>
             </p>
           </div>
         </div>
@@ -339,8 +464,24 @@
   </main>
 
   <footer class="wrap site-footer">
-    <p class="hand">Version de démonstration · carnet tenu à Brest</p>
+    <p class="hand">© <span id="annee">2026</span> Meryem Aoujil · carnet tenu à Brest</p>
+    <p class="site-footer__note">Les travaux collectifs présentés ont été réalisés en équipe ; les noms des co-auteurs et encadrants ne sont pas publiés.</p>
   </footer>
+
+  <!-- Visionneuse d'images -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visionneuse d'images">
+    <div class="lightbox__bar">
+      <p class="lightbox__count" id="lightbox-count"></p>
+      <a class="lightbox__open" id="lightbox-open" href="#" target="_blank" rel="noopener">Ouvrir en taille réelle ↗</a>
+      <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Fermer">✕</button>
+    </div>
+    <figure class="lightbox__figure">
+      <img id="lightbox-img" src="data:," alt="">
+      <figcaption class="hand" id="lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Image précédente">←</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Image suivante">→</button>
+  </dialog>
 
   <!--
     Sélecteur de papier, utile pour choisir le style.
