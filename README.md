@@ -24,7 +24,7 @@ Un clic sur une image l'ouvre dans une visionneuse plein écran. On peut passer 
 ```
 index.html                 la page du site
 assets/css/style.css       la mise en page et les couleurs
-assets/js/main.js          visionneuse, comparateur avant/après, sélecteur de papier
+assets/js/main.js          visionneuse et comparateur avant/après
 assets/img/portrait.jpg    la photo de profil
 assets/img/projets/        les visuels des études de cas
 assets/img/cartes/         les 9 cartes SIG
@@ -66,8 +66,3 @@ Le site se met à jour sur GitHub Pages en une à deux minutes.
 
 Le logo de Brest Métropole Habitat (`assets/img/logos/logo-bmh.png`) apparaît dans la fiche du projet ANRU. Les autres partenaires (Quimper Bretagne Occidentale, Cerema, Wilaya Tanger-Tétouan-Al Hoceïma) sont cités en texte dans leurs projets et dans le parcours.
 
-## Choisir le papier
-
-Un bouton en bas à droite permet de comparer trois papiers : **quadrillé**, **kraft** et **millimétré**. On peut aussi partager un lien qui ouvre directement l'un d'eux, en ajoutant `?papier=kraft` ou `?papier=millimetre` à la fin de l'adresse.
-
-Une fois le choix fait, écrire le papier dans la première balise de `index.html`, par exemple `<html lang="fr" data-paper="kraft">`, puis supprimer le bloc `<div class="paper-switch" …>`, signalé par un commentaire.

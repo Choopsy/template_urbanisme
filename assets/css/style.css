@@ -1,8 +1,7 @@
 /* ==========================================================================
    Portfolio · Meryem Aoujil
    Style « Carnet de terrain » : papier, encre, surligneur, scotch.
-   Trois papiers au choix via l'attribut data-paper de la balise <html> :
-   (aucun) = quadrillé bleu · "kraft" = kraft pointillé · "millimetre" = millimétré
+   Papier quadrillé bleu, encre marine, accent rouge.
    ========================================================================== */
 
 /* ---------- 1. Couleurs et polices ---------- */
@@ -31,31 +30,6 @@
   color-scheme: light;
 }
 
-:root[data-paper="kraft"] {
-  --paper: #E9DDC5;
-  --grid: #C9B48C;
-  --card: #FBF7EE;
-  --ink: #2B2118;
-  --accent: #2F6B4F;
-  --highlight: #F4B3A8;
-  --muted: #5E4E3A;
-  --wash: #F1E8D6;
-  --tape: rgba(244, 179, 168, 0.7);
-}
-
-:root[data-paper="millimetre"] {
-  --paper: #FFFCF8;
-  --grid: #F2C4A4;
-  --grid-soft: #FAE6D8;
-  --card: #FFFFFF;
-  --ink: #26262B;
-  --accent: #2457C5;
-  --highlight: #C2F27A;
-  --muted: #5A5A63;
-  --wash: #F3F4F7;
-  --tape: rgba(194, 242, 122, 0.65);
-}
-
 /* ---------- 2. Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -79,22 +53,6 @@ body {
     linear-gradient(var(--grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid) 1px, transparent 1px);
   background-size: 24px 24px;
-}
-
-/* papier kraft pointillé */
-:root[data-paper="kraft"] body {
-  background-image: radial-gradient(circle, var(--grid) 1.4px, transparent 1.8px);
-  background-size: 22px 22px;
-}
-
-/* papier millimétré */
-:root[data-paper="millimetre"] body {
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
-    linear-gradient(var(--grid-soft) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-soft) 1px, transparent 1px);
-  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -975,36 +933,7 @@ section, article { scroll-margin-top: 16px; }
 .site-footer p.hand { font-size: 1.375rem; color: var(--muted); }
 .site-footer__note { font-size: .8125rem; color: var(--muted); max-width: 70ch; margin-top: 4px; }
 
-/* ---------- 13. Sélecteur de papier (à retirer une fois le choix fait) ---------- */
-.paper-switch {
-  position: fixed;
-  z-index: 20;
-  right: max(16px, env(safe-area-inset-right, 0px));
-  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px;
-  background: var(--card);
-  color: var(--ink);
-  border-radius: 999px;
-  box-shadow: 0 8px 24px rgba(20, 24, 40, 0.2);
-  font-size: 0.8125rem;
-  font-weight: 600;
-}
-.paper-switch span { padding: 0 6px 0 10px; }
-.paper-switch button {
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: 0;
-  border-radius: 999px;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.paper-switch button[aria-pressed="true"] { background: var(--ink); color: var(--card); }
-
-/* ---------- 14. Ajustements ---------- */
+/* ---------- 13. Ajustements ---------- */
 @media (max-width: 560px) {
   .gallery { columns: 2; column-gap: 12px; }
   .gallery > .shot { margin-bottom: 12px; }
@@ -1019,7 +948,6 @@ section, article { scroll-margin-top: 16px; }
 }
 
 @media (max-width: 480px) {
-  .paper-switch span { display: none; }
   .fiche__meta dd { font-size: 1.375rem; }
   .hero__kicker { font-size: 1.5rem; }
 }
@@ -1037,7 +965,7 @@ section, article { scroll-margin-top: 16px; }
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
   /* éléments d'interface inutiles sur papier */
-  .paper-switch, .skip-link, .lightbox, .nav, .hero__links, .zoom__hint,
+  .skip-link, .lightbox, .nav, .hero__links, .zoom__hint,
   .compare__range, .compare__handle, .profile__link { display: none !important; }
   .site-header { justify-content: flex-start; padding-block: 8px; }
 
