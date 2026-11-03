@@ -11,7 +11,7 @@ Le site n'utilise que du HTML, du CSS et un peu de JavaScript. Il n'y a rien à 
 | Accueil | Présentation, recherche de stage, photo, liens vers le CV et le contact |
 | Profil | Trois domaines de compétence, chacun relié à la section qui le prouve |
 | Études de cas | 01 ANRU (projet actuel, en cours), 02 Biométropole, 03 Logistique urbaine à Quimper |
-| Cartographie SIG | 9 cartes : Lambézellec (Brest), puis l'atlas de la région Tanger-Tétouan-Al Hoceïma |
+| Cartographie SIG | 13 cartes : Lambézellec à Brest (affiche et mini-atlas de 3 cartes), l'atlas de la région Tanger-Tétouan-Al Hoceïma, puis la population de la région PACA |
 | Planches d'urbanisme | Du plus récent au plus ancien : Daoulas (2026), Mqam Tolba (2025), médina de Safi (2024), Hay Riad (2023), Dar Bouazza (2022) |
 | Parcours | Formations, stages, prochaine étape |
 | Boîte à outils | Savoir-faire, logiciels, langues, engagement |
@@ -27,7 +27,7 @@ assets/css/style.css       la mise en page et les couleurs
 assets/js/main.js          visionneuse et comparateur avant/après
 assets/img/portrait.jpg    la photo de profil
 assets/img/projets/        les visuels des études de cas
-assets/img/cartes/         les 9 cartes SIG
+assets/img/cartes/         les 13 cartes SIG
 assets/img/logos/          les logos des partenaires (logo-bmh.png)
 assets/img/planches/       les planches d'urbanisme
 assets/docs/               le CV en PDF

@@ -816,6 +816,9 @@ section, article { scroll-margin-top: 16px; }
 /* Cartes SIG */
 .maps { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 28px 22px; }
 .maps--wide { grid-template-columns: minmax(0, 1fr); }
+.maps--atlas { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.atlas__intro { max-width: 72ch; margin: 28px 0 18px; font-size: .9375rem; line-height: 1.55; color: var(--muted); }
+.atlas__intro .label { display: block; margin-bottom: 6px; color: var(--ink); }
 .maps--wide .map-card { flex-direction: row; flex-wrap: wrap; }
 .maps--wide .map-card__img { flex: 999 1 520px; border-bottom: 0; border-right: 1px solid var(--grid); }
 .maps--wide .map-card__body { flex: 1 1 240px; justify-content: center; padding: 20px 22px; }
@@ -937,7 +940,8 @@ section, article { scroll-margin-top: 16px; }
 @media (max-width: 560px) {
   .gallery { columns: 2; column-gap: 12px; }
   .gallery > .shot { margin-bottom: 12px; }
-  .maps:not(.maps--wide) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
+  .maps:not(.maps--wide):not(.maps--atlas) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
+  .maps--atlas { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .maps--wide .map-card__img, .planche-card__frame { border-right: 0; border-bottom: 1px solid var(--grid); }
   .shot { padding: 6px 6px 8px; }
   .shot figcaption { font-size: .75rem; }
