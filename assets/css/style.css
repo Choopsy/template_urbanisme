@@ -705,33 +705,6 @@ section, article { scroll-margin-top: 16px; }
 }
 .partner img { width: 100%; height: auto; }
 
-/* Bandeau des partenaires (Profil) */
-.partners { display: flex; flex-direction: column; gap: 12px; }
-.partners__list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 12px;
-}
-.partners__list a {
-  height: 100%;
-  min-height: 84px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2px;
-  padding: 12px 16px;
-  background: var(--card);
-  border: 1px solid var(--grid);
-  text-decoration: none;
-  transition: border-color .2s ease;
-}
-.partners__list a:hover { opacity: 1; border-color: var(--ink); }
-.partners__list strong { font-size: .9375rem; line-height: 1.25; }
-.partners__list span { font-size: .8125rem; color: var(--muted); }
-.partners__logo a { align-items: center; background: #FFFFFF; }
-.partners__logo img { width: auto; max-width: 140px; max-height: 60px; }
 
 /* Étapes d'un projet */
 .steps {
@@ -1072,7 +1045,7 @@ section, article { scroll-margin-top: 16px; }
   #projets, #cartographie, #planches, #parcours { break-before: page; }
   .screen-only { display: none; }
   .shot, .map-card, .planche-card, .index-card, .note, .step, .scenario,
-  .postcard, .profile__item, .timeline li, .partners, .trajet, .compare,
+  .postcard, .profile__item, .timeline li, .trajet, .compare,
   .fiche__meta, .tools__block, .stats { break-inside: avoid; }
   .section__head, h2, h3, h4, .fiche__meta { break-after: avoid; }
   .section { padding-top: 0; }

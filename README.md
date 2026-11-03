@@ -64,7 +64,7 @@ Le site se met à jour sur GitHub Pages en une à deux minutes.
 
 ## Logos des partenaires
 
-Le logo de Brest Métropole Habitat (`assets/img/logos/logo-bmh.png`) apparaît dans la fiche du projet ANRU et dans le bandeau « Partenaires et commanditaires » de la section Profil. Les autres partenaires sont pour l'instant indiqués en texte. Pour ajouter un logo, déposer un PNG à fond transparent dans `assets/img/logos/` et remplacer le texte correspondant dans `index.html` (un commentaire indique comment faire).
+Le logo de Brest Métropole Habitat (`assets/img/logos/logo-bmh.png`) apparaît dans la fiche du projet ANRU. Les autres partenaires (Quimper Bretagne Occidentale, Cerema, Wilaya Tanger-Tétouan-Al Hoceïma) sont cités en texte dans leurs projets et dans le parcours.
 
 ## Choisir le papier
 
