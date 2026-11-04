@@ -690,6 +690,9 @@ section, article { scroll-margin-top: 16px; }
 }
 .stats strong { font-family: var(--f-hand); font-weight: 700; font-size: 2.25rem; line-height: 1; color: var(--accent); }
 .stats span { font-size: .8125rem; line-height: 1.3; }
+.stats--words { margin-bottom: 26px; }
+.stats--words li { flex-basis: 200px; }
+.stats--words strong { font-size: 1.875rem; margin-bottom: 4px; }
 
 .block-title { font-weight: 800; font-size: 1.1875rem; padding-top: 22px; border-top: 1.5px dashed var(--muted); }
 
@@ -942,6 +945,7 @@ section, article { scroll-margin-top: 16px; }
   .gallery > .shot { margin-bottom: 12px; }
   .maps:not(.maps--wide):not(.maps--atlas) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
   .maps--atlas { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .stats--words li { flex-basis: 100%; }
   .maps--wide .map-card__img, .planche-card__frame { border-right: 0; border-bottom: 1px solid var(--grid); }
   .shot { padding: 6px 6px 8px; }
   .shot figcaption { font-size: .75rem; }

@@ -13,6 +13,7 @@ Le site n'utilise que du HTML, du CSS et un peu de JavaScript. Il n'y a rien à 
 | Études de cas | 01 ANRU (projet actuel, en cours), 02 Biométropole, 03 Logistique urbaine à Quimper |
 | Cartographie SIG | 13 cartes : Lambézellec à Brest (affiche et mini-atlas de 3 cartes), l'atlas de la région Tanger-Tétouan-Al Hoceïma, puis la population de la région PACA |
 | Planches d'urbanisme | Du plus récent au plus ancien : Daoulas (2026), Mqam Tolba (2025), médina de Safi (2024), Hay Riad (2023), Dar Bouazza (2022) |
+| Voyage d'études | Irlande, 8 au 17 mai 2026 : Project Ireland 2040, de Dublin à Tipperary et Cork, avec 6 photos |
 | Parcours | Formations, stages, prochaine étape |
 | Boîte à outils | Savoir-faire, logiciels, langues, engagement |
 | Contact | E-mail, téléphone, LinkedIn, CV en PDF |
@@ -30,6 +31,7 @@ assets/img/projets/        les visuels des études de cas
 assets/img/cartes/         les 13 cartes SIG
 assets/img/logos/          les logos des partenaires (logo-bmh.png)
 assets/img/planches/       les planches d'urbanisme
+assets/img/voyage/         les photos du voyage d'études en Irlande
 assets/docs/               le CV en PDF
 robots.txt                 demande aux moteurs de recherche de ne pas indexer le site (voir plus bas)
 .gitignore                 empêche d'envoyer le dossier source/ sur GitHub
